@@ -6,7 +6,7 @@ WORKDIR /app
 EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
-WORKDIR /src
+WORKDIR /
 COPY *.sln ./
 #COPY AcrHelloworld/AcrHelloworld.csproj AcrHelloworld/
 #COPY docker-compose.dcproj ./
