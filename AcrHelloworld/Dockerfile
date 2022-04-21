@@ -9,7 +9,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
 WORKDIR /src
 COPY *.sln ./
 #COPY AcrHelloworld/AcrHelloworld.csproj AcrHelloworld/
-COPY docker-compose.dcproj ./
+#COPY docker-compose.dcproj ./
 RUN dotnet restore AcrHelloworld/AcrHelloworld.csproj
 COPY . .
 WORKDIR /src/AcrHelloworld
